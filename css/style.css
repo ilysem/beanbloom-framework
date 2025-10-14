@@ -49,33 +49,31 @@ TABLE OF CONTENTS
 /* DEFINE GLOBAL VARIABLES */
 :root {
 
-    /* DEFINE BASE COLORS */
-    --color-white: #fff;
-    --color-black: #000;
-    --color-black-80: rgb(0 0 0 / .8);
+/* DEFINE BASE COLORS */
+--color-white: #fff;
+--color-black: #000;
+--color-black-80: rgb(0 0 0 / .8);
 
-    --color-grey-100: rgb(0 0 0 / .05);
-    --color-grey-200: rgb(0 0 0 / .2);
+--color-grey-100: rgb(0 0 0 / .05);
+--color-grey-200: rgb(0 0 0 / .2);
 
-    --color-blue-100: #dbeafe;
-    --color-blue-400: #3b82f6;
-    --color-blue-900: #1e40af;
+/* BRAND COLORS */
+--color-pink-light: #FBDED7;
+--color-pink-dark: #FFC6B9;
+--color-green-light: #CCC386;
+--color-green-dark: #A09B54;
+--color-brown: #A16A42;
 
-    --color-green-100: #d1fae5;
-    --color-green-200: #a0f2be;
-    --color-green-400: #22c55e;
-    --color-green-600: #0E9B42;
-    --color-green-800: #166534;
-    --color-green-900: #004419;
+/* SEMANTIC COLORS */
+--color-body-background: var(--color-pink-light);
+--color-body-text: var(--color-black-80);
+--color-body-text-dark: var(--color-black);
 
-    /* DEFINE SEMANTIC COLORS */
-    --color-body-background: var(--color-white);
-    --color-body-text: var(--color-black-80);
-    --color-body-text-dark: var(--color-black);
+--color-primary: var(--color-pink-dark);
+--color-primary-dark: var(--color-brown);
+--color-secondary: var(--color-green-dark);
+--color-accent: var(--color-green-light);
 
-    --color-primary: var(--color-blue-400);
-    --color-primary-dark: var(--color-blue-900);
-    --color-secondary: var(--color-green-400);
 
     /* ACTION COLORS */
     --color-links: var(--color-green-600);
@@ -87,7 +85,7 @@ TABLE OF CONTENTS
     --color-siteheader-links: var(--color-blue-400);
     --color-siteheader-links-hover: var(--color-blue-900);
     --color-sitefooter-background: transparent;
-    --color-hero-background: var(--color-blue-100);
+    --color-hero-background: var(--color-pink-dark);
 
     /* BORDERS */
     --color-border: var(--color-grey-200);
@@ -106,8 +104,9 @@ TABLE OF CONTENTS
     --container-width: 1100px;
 
     /* GLOBAL FONTS */
-    --font-body: system-ui, Helvetica, arial, sans-serif;
-    --font-headings: Georgia, Times, "Times New Roman", serif;
+--font-body: 'Inter', system-ui, Helvetica, Arial, sans-serif;
+--font-headings: 'Playfair Display', Georgia, Times, "Times New Roman", serif;
+--font-script: 'Good Vibes', cursive;
 
 }
 
@@ -329,7 +328,7 @@ html {
     min-width: 50px;
 }
 
-/* CHRS COYIER'S FIX FOR GAP UNDR INLINE IMAGES AND SVG*/
+/* CHRIS COYIER'S FIX FOR GAP UNDR INLINE IMAGES AND SVG*/
 .site-header .logo img,
 .site-header .logo svg {
     vertical-align: middle;
@@ -580,6 +579,8 @@ body > * {
 .hero p {
     text-wrap: balance;
 }
+
+
 
 /* CUSTOM PAGE LAYOUT - 2 COLUMNS: ASIDE + MAIN CONTENT */
 
