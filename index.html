@@ -16,6 +16,9 @@
     <title>Bean/Bloom</title>
     <meta name="description" content="A simple HTML CSS and JS starter base">
 
+    <!-- SWIPER CSS - put at the top inside of your head -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -66,6 +69,7 @@
             
         </section>
 
+        <!-- ABOUT SECTIION -->
         <section>
             <div class="container">
 
@@ -81,6 +85,38 @@
                 </div>
 
             </div>
+        </section>
+
+        <!-- SWIPER SLIDER SECTION -->
+         
+        <section>
+            <h2>Bean/Bloom Inside</h2>
+         <!-- Slider main container -->
+         <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="https://placehold.co/800x400/pink/black" alt="placeholder image">
+        <!--       <p>This is a caption</p> -->
+            </div>
+            <div class="swiper-slide">
+                <img src="https://placehold.co/800x400/aqua/black" alt="placeholder image">
+        <!--       <p>This is a caption</p> -->
+            </div>
+            <div class="swiper-slide">
+                <img src="https://placehold.co/800x400/yellow/black" alt="placeholder image">
+        <!--       <p>This is a caption</p> -->
+            </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
         </section>
 
         <section>
@@ -126,6 +162,27 @@
         </div>
     </footer>
 
+     <!-- SWIPER JS - put at the bottom inside of your body -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  
+  });</script>
 
     <!-- MAIN JS -->
     <script src="js/script.js"></script>
