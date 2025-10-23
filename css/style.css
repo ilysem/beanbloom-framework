@@ -106,10 +106,12 @@ TABLE OF CONTENTS
     --unit-3xl: 6rem;
     --container-width: 1100px;
 
-    /* GLOBAL FONTS */
+   /* GLOBAL FONTS */
 --font-body: 'Inter', system-ui, Helvetica, Arial, sans-serif;
 --font-headings: 'Playfair Display', Georgia, Times, "Times New Roman", serif;
---font-script: 'Good Vibes', cursive;
+--font-script: 'Great Vibes', cursive;
+
+
 
 }
 
@@ -612,7 +614,38 @@ body > * {
     text-wrap: balance;
 }
 
-
+.pill-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    background: #8d985b;
+    border-radius: 30px;
+    padding: 12px 28px;
+    margin: 24px auto 0 auto;
+    width: 95%;
+    max-width: 520px;
+    list-style: none;
+  }
+  
+  .pill-nav li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pill-nav a {
+    color: #595635;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    display: inline-block;
+    padding: 2px 8px;
+  }
+  
+  .pill-nav a:hover {
+    color: #3e3c1f;
+  }
 
 /* CUSTOM PAGE LAYOUT - 2 COLUMNS: ASIDE + MAIN CONTENT */
 
