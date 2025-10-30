@@ -38,6 +38,8 @@ TABLE OF CONTENTS
     # CUSTOM HERO STYLING
     # CUSTOM PAGE LAYOUT - 2 COLUMNS: ASIDE + MAIN CONTENT
     # STICKYBOX
+    # ORDER BOX
+    # PILL NAVIGATION
 
     #ANIMATIONS 
     # REGULAR ON  PAGE LOAD ANIMATIONS
@@ -666,6 +668,61 @@ body > * {
     }
 
 }
+
+.order-form {
+    background: #A16A42;
+    color: #FFF6B6;
+    max-width: 340px;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .order-form h2, .order-form p {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .order-form label {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+  }
+  
+  .order-form input {
+    width: 100%;
+    padding: 0.7rem;
+    background: #a1a366;
+    border: none;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #f6efce;
+  }
+  
+  .order-form input::placeholder {
+    color: #e6d9a8;
+  }
+  
+  .order-form button {
+    width: 100%;
+    background: #616339;
+    color: #f8f4d7;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .order-form button:hover {
+    background: #4c502f;
+  }
+
+  
+  
 
 /* STICKYBOX */
 /* NOTE NEEDED ON SMALL SCREENS, SO IT IS SET INSIDE OF A MEDIA QUERY SO IT ALLOWS THE OVERLAY MENU TO RENDER ON TOP ON SMALL SCREENS */
